@@ -11,7 +11,51 @@ button{
   color: white
 }
 
+form{
+  background-color: #100e17;
+  padding:5%;
+  margin: 5% 10% 5% 10%;
+  display: flex;
+}
+
 input{
   height:20px;
-  
+  margin-right: 5%;
+}
+
+select{
+  margin-right: 5%;
+}
+
+label{
+  margin-right: 2%;
+  color:white;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1{
+  font-size: 50px;
+  margin-bottom: -2%;
+}
+
+p{
+  font-weight: lighter;
+  color:  #979797
+}
+
+ul{
+  list-style:none;
+}
+
+
+li{
+  background-color: white;
+  padding:4% 10% 4% 10%;
+  margin: 5% 10% 5% 10%;
+
+  box-shadow: 10px 10px 8px #E3E3E3;
 }
