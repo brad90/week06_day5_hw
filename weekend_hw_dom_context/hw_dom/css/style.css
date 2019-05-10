@@ -1,0 +1,17 @@
+body{
+  background-color: #F7F7F7;
+}
+
+button{
+  background-color: green;
+  padding: 1% 2%;
+  border: 0 solid white;
+
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white
+}
+
+input{
+  height:20px;
+  
+}
