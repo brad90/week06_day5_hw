@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const newFormInfo = document.querySelector('#form');
   newFormInfo.addEventListener('submit', handleFormInfoSubmit)
 
-  const deleteAllInfo = document.querySelector('#delete_all');
-  deleteAllInfo.addEventListener('click', handleDeleteAllInfo)
+  // const deleteAllInfo = document.querySelector('#delete_all');
+  // deleteAllInfo.addEventListener('click', handleDeleteAllInfo)
 
   console.log('Javascript loaded')
 
@@ -32,9 +32,14 @@ const handleFormInfoSubmit = function(event){
 
   const pageList = document.querySelector('#share_list')
   pageList.appendChild(listItem)
+
+  event.target.reset()
+
 }
 
 const handleDeleteAllInfo = function(event){
   const ulList = document.querySelector('#share_list')
-  ulList.removeChild('li')
+  while (ulList.hasChildNodes()){
+  ulList.removeChild(ulList.firstChild)
+  }
 }
