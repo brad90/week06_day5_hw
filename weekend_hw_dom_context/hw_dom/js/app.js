@@ -17,18 +17,36 @@ const handleFormInfoSubmit = function(event){
 
   const listItem = document.createElement('li');
 
+
+  const listImage = document.createElement('IMG')
   const listH1 = document.createElement('h1');
   const listH3 = document.createElement('h3');
-  const listP = document.createElement('p');
+  const iconImage = document.createElement('IMG')
 
 
+
+  const listP = event.target.select.value
+  debugger
+  listImage.src =event.target.imageSource.value
+  const listPInteger = parseInt(listP)
   listH1.textContent = `${event.target.shareName.value}`
   listH3.textContent = `${event.target.marketCap.value}`
-  listP.textContent = `${event.target.select.value}`
+  iconImage.src = "http://www.clker.com/cliparts/t/2/A/5/2/O/star-green-favorite-md.png"
 
+  iconImage.setAttribute("id", "icon")
+
+  const numberOfStarsFunction = function(){
+    for(let i=0;i<listP; i++){
+      return iconImage
+    }
+  }
+
+  numberOfStars = numberOfStarsFunction()
+
+  listItem.appendChild(listImage)
   listItem.appendChild(listH1)
   listItem.appendChild(listH3)
-  listItem.appendChild(listP)
+  listItem.appendChild(numberOfStars)
 
   const pageList = document.querySelector('#share_list')
   pageList.appendChild(listItem)

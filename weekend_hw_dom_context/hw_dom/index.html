@@ -8,31 +8,46 @@
   <title></title>
 </head>
 <body>
+
     <div class ="form_setup">
+
+      <h2 class="title_text"> <strong>Start your exploring.</strong> Book unique homes and
+      experience a city like a local. </h2>
+
       <form id="form">
+
         <div class = "input_form_div">
-          <label for="shareName" >Share Name:</label>
-          <input type="text" id="shareName" placeholder="merket_name" required>
+          <label for="shareName" >Where</label>
+          <input type="text" id="shareName" placeholder="Enter location visited" >
         </div>
 
         <div class = "input_form_div">
-          <label for="marketCap" >Market Cap:</label>
-          <input type="test" id="marketCap" placeholder="market_name" required>
+          <label for="marketCap" >When</label>
+          <input type="text" id="marketCap" placeholder="Enter when you visited" >
         </div>
 
+
+
         <div class = "input_form_div">
-          <label for="select"> Select: </label>
+          <label for="imageSource">Upload Image Link</label>
+          <input type="text" id="imageSource" placeholder="Enter image link" >
+        </div>
+
+        <div class = "input_form_div_small">
+          <label for="select">Rating</label>
           <select class ="custom-select" id="select">
-            <option value="Option1">Option 1</option>
-            <option value="Option2">Option 2</option>
-            <option value="Option3">Option 3</option>
+            <option value="1">1 Star </option>
+            <option value="2"> 2 Star</option>
+            <option value="3">3 star</option>
+            <option value="4">4 star</option>
+            <option value="5">5 star</option>
           </select>
+
         </div>
 
-        <div class = "input_form_div buttons">
+        <div class = "input_form_div_small buttons">
           <label for="submit_name" id="button_label"> hello </label>
           <button type="submit" id="submit_name">Submit Name</button>
-
         </div>
 
       </form>
